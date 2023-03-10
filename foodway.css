@@ -1,0 +1,219 @@
+body,
+html {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  font-family: sans-serif;
+}
+.flex {
+  display: flex;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+.flex-col {
+  flex-direction: column;
+}
+.hor-center {
+  justify-content: center;
+}
+.ver-center {
+  align-items: center;
+}
+.header {
+  margin-top: 60px;
+}
+.title {
+  font-weight: 900;
+  font-size: 60px;
+}
+.title:hover {
+  color: white;
+}
+.content {
+  padding: 60px;
+  justify-content: center;
+  gap: 50px;
+}
+#backBtn {
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 7px 10px;
+  color: black;
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  border-radius: 6px;
+  border: 2px solid rgb(255, 255, 255);
+}
+#hotelContainer,
+#cartContainer {
+  width: 400px;
+  height: 400px;
+  background-color: whitesmoke;
+  border-radius: 18px;
+  gap: 16px;
+}
+#hotelContainer:hover,
+#cartContainer:hover,
+#backBtn:hover {
+  box-shadow: 1px 1px 8px 4px rgb(42, 42, 42);
+}
+#hotelContHeading,
+#cartContHeading {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  border-radius: 8px;
+  border: 1px solid white;
+  width: fit-content;
+  height: fit-content;
+  padding: 8px 28px;
+}
+#listContainer {
+  justify-content: center;
+}
+#listContainer,
+#cartListContainer {
+  width: 340px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px slategrey;
+}
+#cartListContainer {
+  gap: 6px;
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+#hotelContHeading:hover,
+#cartContHeading:hover,
+.hotel:hover {
+  box-shadow: 1px 1px 3px 3px rgb(42, 42, 42);
+}
+
+.hotel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 40px;
+  padding: 12px;
+  margin: 2px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  border: 1px solid white;
+  visibility: visible;
+}
+.hotel-name {
+  width: 120px;
+}
+.hotel-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+.menu-container {
+  width: 340px;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  background-color: #f7ce68;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  border-radius: 8px;
+  visibility: hidden;
+}
+
+/* .price-value,
+.menu-name ,.check-box{
+  margin-bottom: 6px;
+} */
+.check-box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#cartListContainer {
+  font-size: 16px;
+  color: #282828;
+}
+#cartDetails {
+
+  border-radius: 8px;
+  justify-content: space-evenly;
+}
+#itemQuantity {
+  height: fit-content;
+  background-color: white;
+  width: fit-content;
+  padding: 0px 2px;
+  gap: 4px;
+  border-radius: 4px;
+}
+#cartItems {
+  background-color: white;
+  height: fit-content;
+  width: fit-content;
+  padding: 0px 2px;
+  border-radius: 4px;
+}
+
+#removeCartItem,
+#addCartItem {
+  cursor: pointer;
+ height: 20px;
+ width: 20px;
+}
+
+#cartItemRate {
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  padding: 0px 2px;
+  border-radius: 4px;
+}
+#cartTotals {
+  
+  height: 40px;
+  justify-content: space-evenly;
+}
+#cartDelete{
+  height: 20px;
+  width: 20px;
+}
+#placeOrderBtn {
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px 10px;
+}
+#placeOrderBtn:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid black;
+}
+
+.total-name-div,
+.total-amt {
+  width: fit-content;
+  font-weight: 600;
+}
+.total-amt {
+  background-color: white;
+  padding: 2px;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+}
+.space-between-total {
+  justify-content: space-evenly;
+  font-size: 16px;
+}
