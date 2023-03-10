@@ -94,15 +94,15 @@ let setCheckBox = (hotelId) => {
     checkBox.type = 'checkbox';
     checkBox.className = 'check-box';
     checkBox.id = `${hotelId}${[c]}`;
-    checkBox.value = hotel.menu[c].item;
-    checkBox.dataset.value2 = hotel.menu[c].price;
+    checkBox.dataset.dishName = hotel.menu[c].item;
+    checkBox.dataset.dishRate = hotel.menu[c].price;
     checkBox.onclick=()=>clickCheckBox();
     checkBoxDiv.appendChild(checkBox);
-    
-    
+  
  
   }
 };
+
 let clickCheckBox = () => {
  if(checkBox.checked){
   var cartDetails = document.createElement('div');
@@ -143,9 +143,10 @@ let clickCheckBox = () => {
   cartListContainer.appendChild(cartDetails);
  }
  else{
-  console.log("eee")
+  cartListContainer.removeChild(cartDetails);
  }
-    
+  
+ 
   }
  
 let menuDiv;
